@@ -18,7 +18,7 @@ public class CarSpawner : MonoBehaviour
         if (!_isTimerRunning)
         {
             _isTimerRunning = true;
-            yield return new WaitForSeconds(Random.Range(5, 20));
+            yield return new WaitForSeconds(Random.Range(1, 40));
             _canSpawnCar = true;
             _isTimerRunning = false;
         }
